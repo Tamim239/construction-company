@@ -19,7 +19,7 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'primaryColor': '#292E3D',
                     }
                 }
             }
@@ -32,9 +32,55 @@
     </style>
 </head>
 
-<body>
-    <header>
-        
+<body class="scroll-smooth">
+    <nav class="w-4/5 mx-auto">
+        <div class="navbar bg-white">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Projects</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <img src="images/Random Symboles 3.svg" alt="the box">
+              <a class=" text-[#2947A9] pl-3 text-3xl font-bold">The Box</a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-primaryColor">
+                <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Projects</a></li>
+                  <li><a>Services</a></li>
+                  <li class="text-orange-500"><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+    <header class="">
+       <div class="bg-[url('/images/banner.jpg')] w-full h-[85vh] bg-cover bg-right bg-no-repeat">
+        <h1 class="text-7xl font-semibold text-[#292E3D] pl-20 pt-52">Building things <br> is our mission.</h1>
+           <div class="bg-[#3559C7] text-white p-7 w-96 text-center relative left-[72%] bottom-10">
+            <h class="text-xl font-bold">Feature Projects</h>
+            <p class="text-2xl">The National University of Architecture</p>
+            <div class="flex gap-5 justify-center items-center mt-3 w-full">
+                <div class="bg-black w-1/2">
+                    <h3 class="text-xl p-2">Back</h3>
+                </div>
+                <div class="bg-black w-1/2">
+                    <h3 class="text-xl p-2">Next</h3>
+                </div>
+            </div>
+           </div>
+       </div>
+
+    
+
     </header>
     <main>
 
